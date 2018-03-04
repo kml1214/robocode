@@ -81,7 +81,8 @@ public class TeamKorea extends Robot
 	
 	public void onHitRobot(HitRobotEvent event) {
 		back(60);
-		ahead(800); // when hits robot, continues to wall (safer)
+		if (count == 1)
+			ahead(800); // when hits robot, continues to wall (safer)
 	}
 
 	
